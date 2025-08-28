@@ -29,6 +29,10 @@ export default function TratamentoExcecoes() {
     }
   };
 
+  const limparCampo = () => {
+      setValor("")
+  };
+
   return (
     <View style={styles.container}>
       <TextInput
@@ -39,6 +43,7 @@ export default function TratamentoExcecoes() {
         onChangeText={setValor}
       />
       <Button title="Dividir" onPress={handleDivisao} />
+      <Button color="#ff0000" title="Limpar" onPress={limparCampo}/>
       <Toast />
     </View>
   );
