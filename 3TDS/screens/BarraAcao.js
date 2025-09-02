@@ -12,7 +12,7 @@ function TelaComBarra() {
 
 const Stack = createNativeStackNavigator();
 
-export default function BarraAcao() {
+export default function BarraDeAcao() {
   const [modalVisivel, setModalVisivel] = useState(false);
 
   return (
